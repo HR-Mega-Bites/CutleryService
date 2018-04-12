@@ -4,10 +4,10 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/HR-Mega-Bites/cutlery-service
+  - https://github.com/HR-Mega-Bites/menu-service
+  - https://github.com/HR-Mega-Bites/review-service
+  - https://github.com/HR-Mega-Bites/cooking-service
 
 ## Table of Contents
 
