@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Jane Weesner",
   "version": "",
   "description": "",
   "author": "",
@@ -8,8 +8,17 @@
     "node": ">=6.13.0"
   },
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^4.19.1"
+  },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "pg": "^7.4.1"
   }
 }
