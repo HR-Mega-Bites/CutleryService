@@ -68,10 +68,11 @@ const pipeToDB = function pipeToDB(table, file) {
       console.log(err);
     }
     const stream = client.query(copyFrom(`COPY ${table} FROM STDIN CSV`));
-    const fileStream = fs.createReadStream(file);
-    fileStream.on('error', err => console.error(err));
     stream.on('error', err => console.error(err));
     stream.on('end', err => console.error(err));
+    
+    const fileStream = fs.createReadStream(file);
+    fileStream.on('error', err => console.error(err));
     fileStream.pipe(stream);
   });
 };
