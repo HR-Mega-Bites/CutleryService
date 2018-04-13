@@ -1,8 +1,8 @@
-DROP TABLE recipies;
+DROP TABLE recipes;
 DROP TABLE tools;
 DROP TABLE recipe_tool;
 
-CREATE TABLE recipies (
+CREATE TABLE recipes (
     id integer NOT NULL PRIMARY KEY,
     name varchar(255)
 );
@@ -18,7 +18,7 @@ CREATE TABLE tools(
 
 CREATE TABLE recipe_tool( 
     joinId integer NOT NULL PRIMARY KEY,
-    id_recipe integer CONSTRAINT rec_tool_rec_ref REFERENCES recipies (id) ON UPDATE CASCADE ON DELETE CASCADE,
+    id_recipe integer CONSTRAINT rec_tool_rec_ref REFERENCES recipes (id) ON UPDATE CASCADE ON DELETE CASCADE,
     id_tool integer CONSTRAINT rec_tool_tool_ref REFERENCES tools (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
