@@ -24,3 +24,8 @@ coverage
 build/
 dist/
 
+#seeding files
+testJoin.txt
+testRecipe.txt
+testTools.txt
+
