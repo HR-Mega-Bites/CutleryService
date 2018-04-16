@@ -11,8 +11,10 @@ const recipeRow = function recipeRow(id) {
 const toolRow = function toolRow(id) {
   const urlArray = [];
   const num = Math.floor(Math.random() * 4);
-  for (let i = 0; i < num; i++) {
-    urlArray.push('"https://source.unsplash.com/random"');
+  const imageSuffix = ['', 'a', 'b', 'c', 'd'];
+  for (let i = 0; i < num; i++) { 
+    let randomImageId = Math.floor(Math.random() * 30) + imageSuffix[i];
+    urlArray.push('"https://s3-us-west-1.amazonaws.com/kitchen-photos/images/image-' + randomImageId + '.jpg"');
   }
 
   return `${id},"${faker.commerce.productName()}","${faker.lorem.sentences()}","${faker.company.companyName()}",${faker.commerce.price()},"{${urlArray.join()}}"

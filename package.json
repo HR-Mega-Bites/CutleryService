@@ -17,6 +17,10 @@
     "webpack": "webpack --watch --display-error-details"
   },
   "dependencies": {
+
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+
     "babel": "^6.23.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
@@ -27,6 +31,7 @@
     "react-hot-loader": "^4.0.1",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
+
   },
   "devDependencies": {
     "eslint-config-airbnb": "^16.1.0",

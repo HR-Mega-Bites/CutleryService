@@ -1,5 +1,5 @@
-DROP TABLE recipes;
-DROP TABLE tools;
+DROP TABLE recipes CASCADE;
+DROP TABLE tools CASCADE;
 DROP TABLE recipe_tool;
 
 CREATE TABLE recipes (
