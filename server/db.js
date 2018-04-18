@@ -1,4 +1,4 @@
-const {Client} = require('pg');
+const { Client } = require('pg');
 
 const client = new Client({
   database: 'megabites',
@@ -15,16 +15,16 @@ const getRecipeTools = function (id) {
     values: [id],
   };
   return client.query(query);
-} 
+};
 
-const addTool = function({id, name, description, manufacturer, price, imageUrls}){
+const addTool = function ({ id, name, description, manufacturer, price, imageUrls }) {
   imageUrls = JSON.parse(imageUrls);
   const query = {
     text: 'INSERT INTO tools (id, name, description, manufacturer, price, imageUrls) VALUES ($1, $2, $3, $4, $5,$6);',
-    values: [id, name, description, manufacturer, price, imageUrls]
-  }
+    values: [id, name, description, manufacturer, price, imageUrls],
+  };
   return client.query(query);
-}
+};
 
 
 module.exports.getRecipeTools = getRecipeTools;

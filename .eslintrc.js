@@ -1,8 +1,14 @@
 module.exports = {
+    "plugins": ["import", "jsx-a11y","react"],
     "rules": {
         "linebreak-style": ["error","windows"],
-        "no-plusplus": ["allow"],
-        "func-names": ["allow"],
+        "no-plusplus": [0],
+        "func-names": [0],
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        }
     },
     "extends": "airbnb-base"
 

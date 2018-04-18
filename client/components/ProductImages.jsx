@@ -1,23 +1,22 @@
-import React from 'react'
-import {Grid, Row, Col,Image} from 'react-bootstrap'
+import React from 'react';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
-export const ProductImages = (props) =>
-
-(
+export const ProductImages = ({ images }) =>
+  (
   <Grid fluid>
     <Row className="show-grid">
       <Col md={12} className= "no-gutter">
-        <Image src={props.images[0]} responsive />
+        <Image src={images[0]} responsive />
       </Col>
     </Row>
     <Row>
-      {props.images.map(image => 
+      {images.map(image =>
         (
-          <Col md={3} className = "no-gutter">
-            <Image src={image} responsive /> 
-          </Col>  
+          <Col md={3} className="no-gutter">
+            <Image src={image} responsive />
+          </Col>
         )
       )}
     </Row>
   </Grid>
-)
+  );
