@@ -8,6 +8,8 @@ const client = new Client({
 client.connect()
   .catch(err => console.log(err));
 
+
+  //returns promise that should resolve to the requested data 
 const getRecipeTools = function (id) {
   const query = {
     text: `SELECT tools.id, tools.name, tools.description, tools.manufacturer, tools.price, tools.imageURLs

@@ -14,7 +14,8 @@
     ]
   },
   "scripts": {
-    "webpack": "webpack --watch --display-error-details"
+    "webpack": "webpack --watch --display-error-details",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -34,6 +35,7 @@
     "webpack-cli": "^2.0.14"
   },
   "devDependencies": {
+    "babel-jest": "^22.4.3",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.11.0",
@@ -43,6 +45,7 @@
     "fs": "0.0.1-security",
     "jest": "^22.4.3",
     "pg": "^7.4.1",
-    "pg-copy-streams": "^1.2.0"
+    "pg-copy-streams": "^1.2.0",
+    "request": "^2.85.0"
   }
 }
