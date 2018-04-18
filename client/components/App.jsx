@@ -46,8 +46,8 @@ export class App extends React.Component {
         <Grid>
           <Row>
             <Col md={8}>
-            <h4> tried-and-true </h4>
-             <h2> Kitchen Tools </h2>
+              <h4> tried-and-true </h4>
+              <h2> Kitchen Tools </h2>
             </Col>
           </Row>
           <Row className="show-grid">
