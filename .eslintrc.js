@@ -1,8 +1,8 @@
 module.exports = {
     "rules": {
         "linebreak-style": ["error","windows"],
-        "no-plusplus": ["allow"],
-        "func-names": ["allow"],
+        "no-plusplus": [0],
+        "func-names": [0],
     },
     "extends": "airbnb-base"
 
