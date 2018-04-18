@@ -3,8 +3,8 @@ const {client, getRecipeTools, addTool} = require('./db.js');
 const bodyParse = require('body-parser');
 
 const server = express();
-
-server.use(express.static(__dirname + '/public'));
+//console.log()  
+server.use('/', express.static('./public'));
 server.use(bodyParse.urlencoded({extended: true}))
 
 server.get('/recipes/:id', (req, res) => {

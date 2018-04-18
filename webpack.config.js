@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./client/index.js'],
+  entry: './client/index.jsx',
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
@@ -11,15 +11,16 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   devtool: 'eval-source-map',
-  module: {
-    rules: [
+  module : {
+    rules : [
       {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-    ],
-  },
+        test : /\.jsx?/,
+        exclude : /node_modules/,
+        loader : 'babel-loader',      
+        query: {
+          presets: ['react', 'es2015']
+        }
+      }
+    ]
+  }
 };
