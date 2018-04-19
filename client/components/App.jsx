@@ -5,13 +5,13 @@ import { List } from './List.jsx';
 import { Detail } from './Detail.jsx';
 
 const emptyTool = {
-  "id": -1,
-  "name": "",
-  "description": "",
-  "manufacturer": "",
-  "price": 0.00,
-  "imageurls": []
-}
+  id: -1,
+  name: '',
+  description: '',
+  manufacturer: '',
+  price: 0.00,
+  imageurls: [],
+};
 
 export class App extends React.Component {
   constructor(props) {
