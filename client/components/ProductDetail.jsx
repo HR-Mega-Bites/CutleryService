@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col, Button } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 export const ProductDetail = ({ tool }) => (
   <Grid fluid>
@@ -11,14 +11,6 @@ export const ProductDetail = ({ tool }) => (
     <Row>
       <Col md={12}>
         <p> {tool.description} </p>
-      </Col>
-    </Row>
-    <Row >
-      <Col md={3} mdPush= {3}>
-        ${tool.price}
-      </Col>
-      <Col md={6} mdPush= {3}>
-        <Button bsSize="large">Add To Basket</Button>
       </Col>
     </Row>
   </Grid>

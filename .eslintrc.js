@@ -1,9 +1,10 @@
 module.exports = {
-    "plugins": ["import", "jsx-a11y","react"],
+    "plugins": ["import", "jsx-a11y", "react"],
     "rules": {
         "linebreak-style": ["error","windows"],
         "no-plusplus": [0],
         "func-names": [0],
+        "no-unused-vars":[0],
     },
     "parserOptions": {
         "ecmaFeatures": {
