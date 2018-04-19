@@ -37,8 +37,8 @@ export class App extends React.Component {
     };
   }
 
-  changeTool(e) {
-    this.setState({ currentTool });
+  changeTool(index) {
+    this.setState({ currentTool: this.state.tools[index] });
   }
 
   render() {
