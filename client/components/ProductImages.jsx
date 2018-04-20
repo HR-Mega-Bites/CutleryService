@@ -27,7 +27,7 @@ export class ProductImages extends React.Component {
         <Row>
           {images.map((image, index) =>
             (
-              <Col md={3} sm={6} xs= {6} className="no-gutter">
+              <Col md={3} sm={6} xs= {6} className="no-gutter" key={index}>
                 <Image src={image} responsive onClick={() => this.clickHandler.call(this, index)}/>
               </Col>
             ))}
