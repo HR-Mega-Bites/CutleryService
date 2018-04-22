@@ -5,10 +5,10 @@ import { ProductImages } from './ProductImages.jsx';
 
 export const Detail = ({ tool }) => (
   <div>
-      <Col sm={6} md={6}>
+      <Col sm={4} md={5}>
         <ProductImages images={tool.imageurls}/>
       </Col>
-      <Col sm={6} md={6}>
+      <Col sm={8} md={7}>
         <ProductDetail tool={tool}/>
       </Col>
   </div>

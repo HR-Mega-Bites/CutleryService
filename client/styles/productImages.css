@@ -1,9 +1,9 @@
 .imgsquareSm{
   position: absolute;
-  height: 20%;
+  height: 23% !important;
   width: auto;
   cursor: pointer; 
-  left: -55%;
+  left: -50%;
   transform: translateX(50%);
 }
 .imgsquareLg{
@@ -11,8 +11,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
-  width: auto;
+  height: 100% !important;
+  max-width: none !important;
+  transition: transform .1s ease-in-out;
 }
 .outerImgDiv{
   position: relative;
@@ -20,4 +21,5 @@
   padding-bottom: 100%;
   overflow: hidden;
 }
+
 
