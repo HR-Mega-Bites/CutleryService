@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+.purchase{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    padding: 15px;
+}
+
+.colItem{
+  float: right;
+  margin-right:10px;
+}
+
+.headerMajor{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  color: #0F346C;
+}
+
+.headerMinor{
+  font-family:'Source Serif Pro', serif;
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0F346C;
+  padding-top: 5px;
+}
+
+.description{
+  font-family:'Source Serif Pro', serif;
+  font-size: 14px;
+  color: #404040;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 15px 0px;
+}
