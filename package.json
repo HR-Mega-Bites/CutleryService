@@ -38,6 +38,8 @@
   },
   "devDependencies": {
     "babel-jest": "^22.4.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.11.0",
@@ -48,6 +50,7 @@
     "jest": "^22.4.3",
     "pg": "^7.4.1",
     "pg-copy-streams": "^1.2.0",
+    "react-test-renderer": "^16.3.2",
     "request": "^2.85.0"
   }
 }
