@@ -15,6 +15,9 @@
   background-color: #0F346C !important;
   color: white !important;
 }
+.button:hover{
+  background-color: #00214C !important;
+}
 .colItem{
   float: right;
   margin-right:10px;
