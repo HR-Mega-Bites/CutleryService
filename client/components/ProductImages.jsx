@@ -11,7 +11,11 @@ export class ProductImages extends React.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    this.setState({ currentImageIndex: 0 });
+    console.log(nextProps)
+    this.setState({ 
+      currentImageIndex: null,
+      direction: null,
+     });
   }
   clickHandler(index) {
     const newDirection = index<this.state.currentImageIndex? 'prev' : 'next';
@@ -32,6 +36,7 @@ export class ProductImages extends React.Component {
               direction={direction}
               indicators={false}
               controls={false}
+              interval={null}
             >
               {images.map( (image, index) => (
                 <Carousel.Item className={styles.outerImgDiv}  >
