@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+.purchase{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+.price{
+  padding-top: 10px;
+  color: #0F346C;
+}
+
+.button{
+  background-color: #0F346C !important;
+  color: white !important;
+}
+.button:hover{
+  background-color: #00214C !important;
+}
+.colItem{
+  float: right;
+  margin-right:10px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 18px;
+  
+}
+
+.headerMajor{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  color: #0F346C;
+}
+
+.headerMinor{
+  font-family:'Source Serif Pro', serif;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F346C;
+  padding-top: 5px;
+}
+
+.description{
+  font-family:'Source Serif Pro', serif;
+  font-size: 15px;
+  color: #404040;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+.container{
+  height: 440px;
+}

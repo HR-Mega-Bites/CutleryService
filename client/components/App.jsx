@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import { List } from './List.jsx';
 import { Detail } from './Detail.jsx';
+import styles from '../styles/appStyle.css';
 
 const emptyTool = {
   id: -1,
@@ -41,14 +42,18 @@ export class App extends React.Component {
         <Grid>
           <Row>
             <Col md={8}>
-              <h4> tried-and-true </h4>
-              <h2> Kitchen Tools </h2>
+              <div className={styles.headerMinor}>
+                tried-and-true
+               </div>
+              <div className={styles.headerMajor}>
+                Kitchen Tools
+              </div>
             </Col>
           </Row>
           <Row className="show-grid">
             {/* TODO hide this and show drop down when v small */}
             <Col md={4}>
-              <List tools={this.state.tools} changeTool={this.changeTool.bind(this)}/>
+              <List tools={this.state.tools} changeTool={this.changeTool.bind(this)} currentTool = {this.state.currentTool}/>
             </Col>
             <Col xs={12} md={8}>
               <Detail tool={this.state.currentTool} />
