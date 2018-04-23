@@ -5,7 +5,7 @@ import styles from '../styles/productDetail.css';
 
 
 export const ProductDetail = ({ tool }) => (
-  <div>
+  <div className={styles.container}>
     <Row>
       <Col md={12}>
         <div className={styles.headerMajor}>
@@ -17,15 +17,15 @@ export const ProductDetail = ({ tool }) => (
       </Col>
     </Row>
     <Row>
-      <Col md={12}>
+      <Col md={12} >
         <p className = {styles.description}> {tool.description} </p>
       </Col>
     </Row>
     <Row className={styles.purchase}>
       <Col className={styles.colItem}>
-        <Button bsSize="large">Add To Basket</Button>
+        <Button className={styles.button} bsSize="large">Add To Basket</Button>
       </Col>
-      <Col mdPull={1} className={styles.colItem}>
+      <Col mdPull={1} className={`${styles.colItem} ${styles.price}`} >
         ${tool.price}
       </Col>
     </Row>

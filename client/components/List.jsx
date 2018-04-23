@@ -22,7 +22,7 @@ const SingleTool = props => (
     href='#'
     onClick={() => props.changeTool(props.index)} 
     active={props.active}
-    className={styles.listItem}
+    className={props.active ? styles.listItemActive : styles.listItem}
   >
     {props.tool.name}
   </ListGroupItem>
