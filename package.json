@@ -17,6 +17,9 @@
     "webpack": "webpack --watch --display-error-details",
     "test": "jest --coverage"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/test-setup.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "babel": "^6.23.0",
