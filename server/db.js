@@ -2,7 +2,7 @@ const { Client } = require('pg');
 
 const client = new Client({
   database: 'megabites',
-  user: 'jane',
+  user: 'postgres',
 });
 
 client.connect()
