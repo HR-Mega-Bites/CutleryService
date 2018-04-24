@@ -1,63 +1,38 @@
 import React from 'react';
-import { Grid, Row, Col, Image, Carousel } from 'react-bootstrap';
-import styles from '../styles/productImages.css';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 export class ProductImages extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentImageIndex: props.images.length ? 0 : null,
-      direction: null,
+      currentImageIndex: 0,
     };
   }
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
-    this.setState({ 
-      currentImageIndex: null,
-      direction: null,
-     });
+    this.setState({ currentImageIndex: 0 });
   }
   clickHandler(index) {
-    const newDirection = index<this.state.currentImageIndex? 'prev' : 'next';
-    this.setState({
-       currentImageIndex: index, 
-       direction: newDirection,
-      });
+    this.setState({ currentImageIndex: index });
   }
 
   render() {
     const { images } = this.props;
-    const { currentImageIndex, direction } = this.state; 
     return (
-      <div>
+      <Grid fluid>
         <Row className="show-grid">
-            <Carousel
-              activeIndex={currentImageIndex}              
-              direction={direction}
-              indicators={false}
-              controls={false}
-              interval={null}
-            >
-              {images.map( (image, index) => (
-                <Carousel.Item className={styles.outerImgDiv}  >
-                <img key={index} src={image} className={styles.imgsquareLg} />
-                </Carousel.Item>
-              ))}
-             </Carousel>
+          <Col md={12} className= "no-gutter">
+            <Image src={images.length ? images[this.state.currentImageIndex] : null} responsive />
+          </Col>
         </Row>
         <Row>
           {images.map((image, index) =>
             (
-              <Col md={3} sm={6} xs= {6} className={styles.outerImgDiv}>
-                <Image 
-                  src={image}
-                  responsive
-                  onClick={() => this.clickHandler.call(this, index)}
-                  className={styles.imgsquareSm} />
+              <Col md={3} sm={6} xs= {6} className="no-gutter" key={index}>
+                <Image src={image} responsive onClick={() => this.clickHandler.call(this, index)}/>
               </Col>
             ))}
         </Row>
-      </div>
+      </Grid>
     );
   }
 }
