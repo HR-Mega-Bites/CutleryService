@@ -17,9 +17,6 @@
     "webpack": "webpack --watch --display-error-details",
     "test": "jest --coverage"
   },
-  "jest": {
-    "setupTestFrameworkScriptFile": "./test/test-setup.js"
-  },
   "dependencies": {
     "axios": "^0.18.0",
     "babel": "^6.23.0",
@@ -54,7 +51,6 @@
     "jest": "^22.4.3",
     "pg": "^7.4.1",
     "pg-copy-streams": "^1.2.0",
-    "react-test-renderer": "^16.3.2",
     "request": "^2.85.0"
   }
 }

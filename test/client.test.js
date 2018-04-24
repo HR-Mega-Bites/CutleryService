@@ -1,9 +1,11 @@
-
-const { shallow, render } = require('enzyme');
++const { shallow, render } = require('enzyme');
 const axios = require('axios');
 const React = require('react');
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 
+configure({ adapter: new Adapter() });
 const TestData = [
   {
     "id": 52,
@@ -73,4 +75,3 @@ describe('List.jsx', () => {
   });
 
 })
-
