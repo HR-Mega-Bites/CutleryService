@@ -18,7 +18,7 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipeId: 10,
+      recipeId: 0,
       tools: [],
       currentTool: emptyTool,
     };
@@ -38,7 +38,8 @@ export class App extends React.Component {
   }
 
   render() {
-    return (
+    return this.state.tools.length ?
+      (
         <Grid>
           <Row>
             <Col md={8}>
@@ -60,6 +61,12 @@ export class App extends React.Component {
             </Col>
           </Row>
         </Grid>
-    );
+    )
+    : (
+        <div className={styles.headerMajor}>
+          No kitchen tools needed 🔪
+        </div>
+    )
   }
+
 }
