@@ -25,7 +25,7 @@ export class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(document.location.pathname+ 'tools')
+    axios.get('http://localhost:3000' + document.location.pathname + 'tools')
       .then(response => this.setState({
         tools: response.data,
         currentTool: response.data[0] || emptyTool,

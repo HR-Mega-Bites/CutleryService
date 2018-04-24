@@ -1,10 +1,14 @@
 const express = require('express');
-const { client, getRecipeTools, addTool } = require('./db.js');
 const bodyParse = require('body-parser');
+const cors = require('cors');
+const { client, getRecipeTools, addTool } = require('./db.js');
+
 
 const server = express();
+server.use(cors());
 
 server.use('/recipes/:id', express.static('./public'));
+server.use('/', express.static('./public'));
 server.use(bodyParse.urlencoded({extended: true}));
 
 
