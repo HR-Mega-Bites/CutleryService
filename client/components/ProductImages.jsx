@@ -11,7 +11,6 @@ export class ProductImages extends React.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
     this.setState({ 
       currentImageIndex: null,
       direction: null,
