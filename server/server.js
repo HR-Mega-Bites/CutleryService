@@ -1,14 +1,18 @@
 const express = require('express');
-const { client, getRecipeTools, addTool } = require('./db.js');
 const bodyParse = require('body-parser');
+const cors = require('cors');
+const { client, getRecipeTools, addTool } = require('./db.js');
+
 
 const server = express();
+server.use(cors());
 
+server.use('/recipes/:id', express.static('./public'));
 server.use('/', express.static('./public'));
 server.use(bodyParse.urlencoded({extended: true}));
 
 
-server.get('/recipes/:id', (req, res) => {
+server.get('/recipes/:id/tools', (req, res) => {
   getRecipeTools(req.params.id)
     .then(response => res.end(JSON.stringify(response.rows)))
     .catch(err => console.error(err));
