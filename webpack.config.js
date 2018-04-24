@@ -5,7 +5,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
-    filename: '[name].js',
+    filename: 'bundle.js',
+    library: 'App',
+    libraryExport: 'default',
+    libraryTarget: 'var',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
