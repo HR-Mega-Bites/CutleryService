@@ -14,7 +14,7 @@ const emptyTool = {
   imageurls: [],
 };
 
-export class App extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -69,3 +69,5 @@ export class App extends React.Component {
   }
 
 }
+
+window.App = App;
