@@ -6,7 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
     filename: 'bundle.js',
-    library: 'App',
+    library: 'Tools',
     libraryExport: 'default',
     libraryTarget: 'var',
   },

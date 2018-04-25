@@ -39,7 +39,7 @@ class App extends React.Component {
   render() {
     return this.state.tools.length ?
       (
-        <Grid>
+        <Grid className={styles.overall}>
           <Row>
             <Col md={8}>
               <div className={styles.headerMinor}>
