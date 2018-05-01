@@ -1,6 +1,6 @@
-# Project Name
+# Mega Bites : Cutlery Component
 
-> Project description
+> Individual component and db, used to render the 'Tools' section within the Mega Bites application 
 
 ## Related Projects
 
