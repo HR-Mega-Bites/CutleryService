@@ -1,0 +1,78 @@
+.header{
+    
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Source Serif Pro', serif;
+    color: #0F346C;
+    letter-spacing: .06em;
+    text-align: center;
+    padding: 30px 0;
+    background-color: inherit;
+
+}
+.subtotal{
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: right;
+    padding: 10px;
+    padding-bottom: 40px; 
+
+}
+.subPrice{
+    font-weight: 600;
+}
+.footer{
+    background-color: inherit;
+    padding: 30px;
+    font-size: 10px
+}
+
+.shell{
+    background-color: #fafbfc;
+    height: 100%
+
+}
+
+.cartContents{
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+    padding: 20px 30px
+
+}
+
+.button{
+    background-color: #245091 !important;
+    color: white !important;
+    border-radius: 1px !important;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 16px !important;
+    border: none !important;
+    width: 45%;
+}
+.button:hover{
+    background-color: #00214C !important;
+}
+.continue:hover{
+    background-color: grey !important;
+}
+
+.continue{
+    background-color: #e1e4e6 !important;
+    color: black !important;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-around;
+}
+
+.link{
+    color: #245091 !important;
+}
+.link:hover{
+    cursor: pointer;
+}

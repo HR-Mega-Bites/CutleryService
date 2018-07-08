@@ -20,7 +20,10 @@ export const List = props => (
 const SingleTool = props => (
   <ListGroupItem
     href='#'
-    onClick={() => props.changeTool(props.index)} 
+    onClick={(e) => {
+      e.preventDefault(); 
+      props.changeTool(props.index)
+    }} 
     active={props.active}
     className={props.active ? styles.listItemActive : styles.listItem}
   >
