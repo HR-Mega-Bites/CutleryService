@@ -11,10 +11,13 @@
   "babel": {
     "presets": [
       "env",
-      "react"
+      "react",
+      "stage-1"
     ]
   },
   "scripts": {
+    "seed": "node seed/seed.js",
+    "start": "node server/server.js",
     "webpack": "webpack --watch --display-error-details",
     "test": "jest --coverage"
   },
@@ -29,20 +32,23 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
+    "fuck-npm": "^1.0.0",
     "jquery": "^3.3.1",
+    "material-ui": "^0.20.0",
     "react": "^16.3.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.1",
     "react-hot-loader": "^4.0.1",
+    "redis": "^2.8.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
   },
   "devDependencies": {
     "babel-jest": "^22.4.3",
+    "babel-preset-stage-1": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "react-test-renderer": "^16.3.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.11.0",
@@ -53,6 +59,7 @@
     "jest": "^22.4.3",
     "pg": "^7.4.1",
     "pg-copy-streams": "^1.2.0",
+    "react-test-renderer": "^16.3.2",
     "request": "^2.85.0"
   }
 }

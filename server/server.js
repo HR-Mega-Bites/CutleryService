@@ -1,6 +1,10 @@
 const express = require('express');
 const bodyParse = require('body-parser');
 const cors = require('cors');
+
+//var redis = require('redis');
+//var client = redis.createClient()
+
 const { client, getRecipeTools, addTool } = require('./db.js');
 
 

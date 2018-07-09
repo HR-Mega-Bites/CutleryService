@@ -4,7 +4,7 @@ import styles from '../styles/productDetail.css';
 
 
 
-export const ProductDetail = ({ tool }) => (
+export const ProductDetail = ({ tool, handleCartClick, index }) => (
   <div className={styles.container}>
     <Row>
       <Col md={12}>
@@ -23,7 +23,7 @@ export const ProductDetail = ({ tool }) => (
     </Row>
     <Row className={styles.purchase}>
       <Col className={styles.colItem}>
-        <Button className={styles.button} bsSize="large">Add To Basket</Button>
+        <Button className={styles.button} onClick={() => handleCartClick(index)} bsSize="large"> Add To Basket </Button>
       </Col>
       <Col mdPull={1} className={`${styles.colItem} ${styles.price}`} >
         ${tool.price}

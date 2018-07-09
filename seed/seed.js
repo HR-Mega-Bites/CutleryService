@@ -62,7 +62,7 @@ const createTestDataSet = function createTestDataSet() {
 const pipeToDB = function pipeToDB(table, file) {
   const client = new pg.Client({
     user: 'postgres',
-    host: 'localhost',
+    host: '172.17.0.2',
     database: 'megabites',
   });
   client.connect((err) => {
